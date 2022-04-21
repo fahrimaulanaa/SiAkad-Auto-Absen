@@ -38,7 +38,7 @@ if time_now.strftime('%H:%M') == '06:50':
         alert = driver.switch_to.alert
         alert.accept()
 
-        print("ABSEN BERHASIL")
-
+        print("ABSEN BERHASIL PADA ", time_now.strftime('%H:%M'))
+        
     except:
         pass
