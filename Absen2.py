@@ -39,6 +39,6 @@ if time_now.strftime('%H:%M') == '06:50':
         alert.accept()
 
         print("ABSEN BERHASIL PADA ", time_now.strftime('%H:%M'))
-        
+
     except:
         pass
