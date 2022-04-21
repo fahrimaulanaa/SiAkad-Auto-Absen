@@ -16,7 +16,7 @@ Tutorial setting ChromeProfile ==> https://www.youtube.com/watch?v=6DUU260mZd0
 
 4).Setelah itu coba tutup chrome yang terbuka otomatis lalu coba jalankan lagi BOT nya
 
-5).Jika bot langsung menuju ke laman 'https://siswa.smktelkom-mlg.sch.id/presnow' tanpa harus login dahulu tandanya BOT siap digunakan untuk seterusnya
+5).Jika bot langsung menuju ke laman `https://siswa.smktelkom-mlg.sch.id/presnow` tanpa harus login dahulu tandanya BOT siap digunakan untuk seterusnya
 
 # TIPS PENGGUNAAN BOT
 1).Jalankan script pada pukul 05:58 atau 05:59 pagi
