@@ -17,9 +17,13 @@ driver = webdriver.Chrome(executable_path='D:\SiAkad Auto Absen\chromedriver.exe
 driver.get("https://siswa.smktelkom-mlg.sch.id/presnow")
 time_now = datetime.now(pytz.timezone('Asia/Jakarta'))
 
+print("BOT ABSEN SIAKAD SMK TELKOM MALANG")
+print("Created by: Fahri Maulana Al Ghazali XR2/16")
+
 #Click the absen button
 if time_now.strftime('%H:%M') == '06:50':
     try:
+        print("BOT SEDANG BERJALAN")
         driver.refresh()
 
         masuk = driver.find_element_by_xpath('//label[@for="M"]')
@@ -33,6 +37,8 @@ if time_now.strftime('%H:%M') == '06:50':
         
         alert = driver.switch_to.alert
         alert.accept()
+
+        print("ABSEN BERHASIL")
 
     except:
         pass
