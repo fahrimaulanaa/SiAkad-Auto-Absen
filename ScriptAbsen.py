@@ -24,8 +24,9 @@ time_now = datetime.now(WIB)
 while True:
     WIB = pytz.timezone('Asia/Jakarta')
     time_now = datetime.now(WIB)
+    print("# Menunggu pukul 06:00 WIB")
 
-    if time_now.strftime('%H:%M') == '21:57':
+    if time_now.strftime('%H') == '22' and time_now.strftime('%M') == '26':
         try:
             driver.refresh()
             masuk = driver.find_element_by_xpath('//label[@for="M"]')
@@ -40,9 +41,15 @@ while True:
             alert = driver.switch_to.alert
             alert.accept()
 
-            print("ABSEN BERHASIL PADA ", time_now.strftime('%H:%M'))
+            #Check absen
+            temp = driver.find_element_by_css_selector("div[class=number]")
+            if(temp.text == 'Masuk'):
+                print("--- Absen Success ---")
+
+            print("ABSEN BERHASIL PADA ", time_now.strftime('%H:%M'), "WIB")
         except:
-            print("ABSEN GAGAL PADA ", time_now.strftime('%H:%M'))
+            print("ABSEN GAGAL PADA ", time_now.strftime('%H:%M'), "WIB") 
+            pass
         break
 
 
