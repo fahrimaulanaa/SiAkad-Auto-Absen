@@ -1,3 +1,4 @@
+#Import needed modules
 from psycopg2 import Time
 import py
 import filewriter
@@ -54,15 +55,3 @@ while True:
         driver.close()
         break
 
-
-
-
-def cek_absen(browser):
-    print("# Check Absen")
-    tmp = browser.find_element_by_css_selector("div[class=number]")
-    if(tmp.text == 'Masuk'):
-        print("--- Absen Success ---")
-        return True
-    else:
-        print("--- Absen Failed ---")
-        return False
